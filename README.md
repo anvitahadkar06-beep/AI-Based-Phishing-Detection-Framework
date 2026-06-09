@@ -1,5 +1,3 @@
-# AI-Based Phishing Detection Framework
-
 <img width="2125" height="575" alt="github-header-banner (2)" src="https://github.com/user-attachments/assets/3349eb70-be5c-495e-a384-46c81df44cc9" />
 
 ## 🛡️ Project Description
