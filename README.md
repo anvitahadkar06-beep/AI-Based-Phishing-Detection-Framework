@@ -6,18 +6,18 @@ Phishing attacks are among the most common cybersecurity threats, often leading 
 
 ## 📂 Project Structure
 
-'''text
+```
 AI-Based-Phishing-Detection-Framework/
-├── README.md               # Main project overview and banner
-├── reports/
-│   └── README.md           # Documentation for weekly and final reports
-├── data/
-│   └── README.md           # Documentation for data collection & datasets
-├── src/
-│   └── README.md           # Documentation for core source code & ML models
-└── deployment/
-    └── README.md           # Deployment configs and operational instructions
-'''text
+├── README.md                      # Main project overview and banner
+├── 📁 reports/                  
+│   └── README.md                  # Documentation for weekly and final reports
+├── 📁 data/                  
+│   └── README.md                  # Documentation for data collection & datasets
+├── 📁 src/                  
+│   └── README.md                  # Documentation for core source code & ML models
+├── 📁 deployment/                  
+│   └── README.md                  # Deployment configs and operational instructions
+```
 
 ## 🛠️ Tech Stack
 
