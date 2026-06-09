@@ -4,6 +4,21 @@
 
 Phishing attacks are among the most common cybersecurity threats, often leading to credential theft, financial fraud, and data breaches. As attackers continue to develop more sophisticated phishing techniques, traditional detection methods may not always be sufficient. This project aims to leverage Machine Learning and Cybersecurity techniques to identify phishing websites and improve online security through automated detection.
 
+## 📂 Project Structure
+
+'''
+AI-Based-Phishing-Detection-Framework/
+├── README.md               # Main project overview and banner
+├── reports/
+│   └── README.md           # Documentation for weekly and final reports
+├── data/
+│   └── README.md           # Documentation for data collection & datasets
+├── src/
+│   └── README.md           # Documentation for core source code & ML models
+└── deployment/
+    └── README.md           # Deployment configs and operational instructions
+'''
+
 ## 🛠️ Tech Stack
 
 * Python
