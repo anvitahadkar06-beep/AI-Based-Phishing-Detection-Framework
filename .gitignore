@@ -216,3 +216,10 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Hide PyCharm configuration files
+.idea/
+
+# Hide everything in raw data except our clean CSVs
+data/raw/*
+!data/raw/*.csv
