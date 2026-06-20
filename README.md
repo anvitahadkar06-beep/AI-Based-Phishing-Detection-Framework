@@ -38,6 +38,7 @@ Navigate into your project root directory and install the required data science 
 ```bash
 cd AI-Based-Phishing-Detection-Framework
 pip install pandas numpy scikit-learn
+```
 (Alternatively, if you are utilizing a requirements tracking file, run: pip install -r requirements.txt)
 
 2. Configure File Ingestion Routes
