@@ -1,0 +1,34 @@
+========================================================================
+TASK 3: DATA SCHEMA DESIGN DOCUMENTATION
+========================================================================
+Storage Target: Local File System (Structured CSV Format)
+Database Type: Relational Flat-File Layout
+Encoding: UTF-8
+
+FIELD-LEVEL CONSTRAINTS & DATA SCHEMA:
+------------------------------------------------------------------------
+Column Name     | Data Type | Constraints             | Allow Null?
+------------------------------------------------------------------------
+Domain          | String    | Variable Text Length    | NO (Primary Key/ID)
+Have_IP         | Integer   | Discrete Binary (0, 1)  | NO
+Have_At         | Integer   | Discrete Binary (0, 1)  | NO
+URL_Length      | Integer   | Discrete Binary (0, 1)  | NO
+URL_Depth       | Integer   | Continuous Integer >= 0 | NO
+Redirection     | Integer   | Discrete Binary (0, 1)  | NO
+https_http      | Integer   | Discrete Binary (0, 1)  | NO
+TinyURL         | Integer   | Discrete Binary (0, 1)  | NO
+Prefix_Suffix   | Integer   | Discrete Binary (0, 1)  | NO
+DNS_Record      | Integer   | Discrete Binary (0, 1)  | NO
+Web_Traffic     | Integer   | Discrete Binary (0, 1)  | NO
+Domain_Age      | Integer   | Discrete Binary (0, 1)  | NO
+Domain_End      | Integer   | Discrete Binary (0, 1)  | NO
+iFrame          | Integer   | Discrete Binary (0, 1)  | NO
+Mouse_Over      | Integer   | Discrete Binary (0, 1)  | NO
+Right_Click     | Integer   | Discrete Binary (0, 1)  | NO
+Web_Forwards    | Integer   | Discrete Binary (0, 1)  | NO
+Label           | Integer   | Target Flag (0=Legit,1=Phish) | NO
+
+INTEGRITY & STORAGE RULES:
+1. Entity Integrity: Every record must have a unique, non-null 'Domain' identifier string.
+2. Domain Integrity: Feature values (except Domain and URL_Depth) must strictly match discrete binary profiles (0 or 1).
+3. Nullability: Any raw record exhibiting missing values or formatting anomalies across any attribute field will be systematically dropped to enforce structural completeness before persisting to disk.
