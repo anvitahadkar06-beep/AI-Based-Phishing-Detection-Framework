@@ -74,8 +74,9 @@ python src/data_storage.py
 ### 5. Review Generated Artifacts
 Once execution completes successfully, navigate to your local output directories to review your production-ready tracking assets:
 
-Processed Splits:```data/processed/X_train.csv, X_test.csv, y_train.csv, y_test.csv```
-Data Integrity Summaries: ```data/processed/data_cleaning_report.txt and storage_documentation.txt```
+Processed Splits:```data/processed/X_train.csv```, ```X_test.csv```, ```y_train.csv```, ```y_test.csv```
+
+Data Integrity Summaries: ```data/processed/data_cleaning_report.txt``` and ```storage_documentation.txt```
 
 ## 👥 Contributors
 
