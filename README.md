@@ -39,39 +39,43 @@ Navigate into your project root directory and install the required data science 
 cd AI-Based-Phishing-Detection-Framework
 pip install pandas numpy scikit-learn
 ```
-(Alternatively, if you are utilizing a requirements tracking file, run: pip install -r requirements.txt)
+(Alternatively, if you are utilizing a requirements tracking file, run:``` pip install -r requirements.txt```)
 
-2. Configure File Ingestion Routes
-Open src/data_collection.py and verify your input file paths inside your loading functions to ensure they point securely to your source datasets:
+### 2. Configure File Ingestion Routes
+Open ```src/data_collection.py``` and verify your input file paths inside your loading functions to ensure they point securely to your source datasets:
 
-Python
+```Python
 # Ensure these match the exact filenames inside your data/raw/ directory
 phishing_data_path = "data/raw/phishing.csv" 
 legitimate_data_path = "data/raw/legitimate.csv"
-Format constraint: Raw source files must be placed inside the data/raw/ directory prior to pipeline execution.
+```
+Format constraint: Raw source files must be placed inside the ```data/raw/``` directory prior to pipeline execution.
 
-3. Configure Schema Rules
-Open data/data_schema_design.txt to modify or append structural constraints, data types, or non-nullability fields that your data storage engine must enforce:
+### 3. Configure Schema Rules
+Open ```data/data_schema_design.txt``` to modify or append structural constraints, data types, or non-nullability fields that your data storage engine must enforce:
 
-Plaintext
+```Plaintext
 # Data Schema Blueprint Guidelines:
 url_length: int (NonNull)
 is_phishing: int (Binary: 0 or 1)
-4. Execute the Data Pipeline
+```
+
+### 4. Execute the Data Pipeline
 Run the modular execution scripts sequentially from the project root directory to clean the data, generate stratified splits, validate schemas, and securely store the outputs:
 
-Bash
+```Bash
 # Step 1: Clean, profile, and split your source datasets
 python src/data_processing.py
 
 # Step 2: Enforce strict schema validation rules and securely store features
 python src/data_storage.py
-5. Review Generated Artifacts
+```
+
+### 5. Review Generated Artifacts
 Once execution completes successfully, navigate to your local output directories to review your production-ready tracking assets:
 
-Processed Splits: data/processed/X_train.csv, X_test.csv, y_train.csv, y_test.csv
-
-Data Integrity Summaries: data/processed/data_cleaning_report.txt and storage_documentation.txt
+Processed Splits:```data/processed/X_train.csv, X_test.csv, y_train.csv, y_test.csv```
+Data Integrity Summaries: ```data/processed/data_cleaning_report.txt and storage_documentation.txt```
 
 ## 👥 Contributors
 
