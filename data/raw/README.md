@@ -7,4 +7,4 @@ This directory serves as the foundation for your project, containing the origina
 * Reproducibility: Serves as the stable reference point to ensure your model training experiments remain consistent.
 
 ## ⚠️ Maintenance
-```**Do Not Modify**: Treat these as ```read-only```. All transformations should be handled by your processing scripts to ensure the integrity of the original data.
+```**Do Not Modify**```: Treat these as ```read-only```. All transformations should be handled by your processing scripts to ensure the integrity of the original data.
