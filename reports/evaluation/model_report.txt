@@ -1,0 +1,15 @@
+AI Based Phishing Detection Framework
+
+Accuracy : 0.8501
+Precision: 0.8710
+Recall   : 0.8394
+F1 Score : 0.8549
+
+              precision    recall  f1-score   support
+
+           0       0.83      0.86      0.85       174
+           1       0.87      0.84      0.85       193
+
+    accuracy                           0.85       367
+   macro avg       0.85      0.85      0.85       367
+weighted avg       0.85      0.85      0.85       367
