@@ -1,0 +1,93 @@
+/* Sidebar Container */
+
+.sidebar {
+    width: 260px;
+    height: 100vh;
+    background: #0f172a;
+    color: white;
+    position: fixed;
+    left: 0;
+    top: 0;
+    padding: 20px;
+    box-sizing: border-box;
+    border-right: 1px solid #1e293b;
+}
+
+
+/* Logo Section */
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 40px;
+}
+
+
+.logo svg {
+    font-size: 30px;
+    color: #38bdf8;
+}
+
+
+.logo h2 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+
+/* Navigation */
+
+.sidebar nav {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+
+/* Navigation Links */
+
+.sidebar nav a {
+
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    color: #cbd5e1;
+    text-decoration: none;
+
+    padding: 12px 15px;
+
+    border-radius: 10px;
+
+    font-size: 16px;
+
+    transition: 0.3s ease;
+}
+
+
+/* Icons */
+
+.sidebar nav a svg {
+    font-size: 20px;
+}
+
+
+/* Hover Effect */
+
+.sidebar nav a:hover {
+
+    background: #1e293b;
+    color: white;
+
+}
+
+
+/* Active Link */
+
+.sidebar nav a.active {
+
+    background: #2563eb;
+    color: white;
+
+}
