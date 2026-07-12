@@ -1,0 +1,90 @@
+/* Main Dashboard Layout */
+
+.dashboard-layout {
+
+    display: flex;
+
+    min-height: 100vh;
+
+    background: #020617;
+
+}
+
+
+/* Area beside sidebar */
+
+.dashboard-area {
+
+    margin-left: 260px;
+
+    width: calc(100% - 260px);
+
+    display: flex;
+
+    flex-direction: column;
+
+}
+
+
+/* Page Content */
+
+.main-content {
+
+    padding: 30px;
+
+    flex: 1;
+
+    color: white;
+
+}
+
+
+/* Responsive Design */
+
+@media screen and (max-width: 768px) {
+
+
+    .sidebar {
+
+        width: 80px;
+
+    }
+
+
+    .dashboard-area {
+
+        margin-left: 80px;
+
+        width: calc(100% - 80px);
+
+    }
+
+
+    .logo h2 {
+
+        display: none;
+
+    }
+
+
+    .sidebar nav a {
+
+        justify-content: center;
+
+    }
+
+
+    .sidebar nav a {
+
+        font-size: 0;
+
+    }
+
+
+    .sidebar nav a svg {
+
+        font-size: 22px;
+
+    }
+
+}

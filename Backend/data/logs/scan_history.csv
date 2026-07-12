@@ -1,0 +1,6 @@
+2026-06-29 22:48:49,https://google.com,LEGITIMATE,98,HIGH,True,0
+2026-06-29 22:49:48,https://google.com,LEGITIMATE,98,HIGH,True,0
+2026-07-12 16:56:16,https://google.com,LEGITIMATE,99.0,LOW,True,0
+2026-07-12 16:56:55,https://google.com,LEGITIMATE,99.0,LOW,True,0
+2026-07-12 16:57:49,http://paypal-login-secure.xyz,PHISHING,96.92,HIGH,False,38
+2026-07-12 16:58:16,https://github.com,LEGITIMATE,99.0,LOW,True,0
