@@ -2,7 +2,6 @@ from urllib.parse import urlparse
 
 # Popular trusted domains
 TRUSTED_DOMAINS = {
-
     "google.com",
     "github.com",
     "microsoft.com",
@@ -19,14 +18,14 @@ TRUSTED_DOMAINS = {
     "gmail.com",
     "google.co.in",
     "wikipedia.org"
-
 }
 
 
 def is_trusted(url):
-
     """
-    Returns True if URL belongs to a trusted domain.
+    Returns:
+        (True, matched_domain) if trusted
+        (False, current_domain) otherwise
     """
 
     domain = urlparse(url).netloc.lower()
@@ -37,6 +36,6 @@ def is_trusted(url):
     for trusted in TRUSTED_DOMAINS:
 
         if domain == trusted or domain.endswith("." + trusted):
-            return True
+            return True, trusted
 
-    return False
+    return False, domain
