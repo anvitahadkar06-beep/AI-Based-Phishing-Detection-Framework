@@ -17,9 +17,27 @@ AI-Based-Phishing-Detection-Framework/
 │   └── data_schema_design.txt     # Data type blueprints and structural constraints   
 │   └── README.md                  # Documentation for data collection & datasets
 ├── 📁 src/
-│   └── data_collection.py         # Source ingestion pipelines
-│   └── data_processing.py         # Data cleansing and partition layout engine
-│   └── data_storage.py            # Secure schema validation and storage engine           
+│   └── app.py                     # Flask API entry point for URL analysis
+│   └── config.py                  # Central configuration and application settings
+│   └── data_collection.py         # URL data collection and ingestion module
+│   └── data_processing.py         # Data cleaning and preprocessing pipeline
+│   └── data_storage.py            # Secure schema validation and storage engine
+│   └── dataset_builder.py         # Dataset generation and feature compilation utility
+│   └── decision_engine.py         # Hybrid ML and rule-based decision engine
+│   └── evaluate_model.py          # Model evaluation and performance metrics
+│   └── feature_extraction.py      # URL feature extraction for machine learning
+│   └── feature_extractor.py       # Legacy feature extraction implementation
+│   └── logger.py                  # Scan history logging and audit trail manager
+│   └── model_loader.py            # Trained model and metadata loading utility
+│   └── model_training.py          # Machine learning model training pipeline
+│   └── prediction.py              # Prediction orchestration and inference module
+│   └── reputation_checker.py      # Domain reputation verification service
+│   └── rule_engine.py             # Rule-based phishing detection engine
+│   └── test_decision_engine.py    # Unit tests for the decision engine
+│   └── test_prediction.py         # Unit tests for the prediction module
+│   └── train_model.py             # Main script for model training workflow
+│   └── trusted_domains.py         # Trusted domain whitelist management
+│   └── utils.py                   # Common helper functions and utilities 
 │   └── README.md                  # Documentation for core source code & ML models
 ├── 📁 deployment/                  
 │   └── README.md                  # Deployment configs and operational instructions
