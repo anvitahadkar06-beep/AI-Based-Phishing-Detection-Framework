@@ -27,7 +27,7 @@ def decide(url):
     """
 
     # -----------------------------
-    # Extract Features
+    # Feature Extraction
     # -----------------------------
     features_df = extract_features(url)
 
@@ -71,9 +71,9 @@ def decide(url):
     reasons = rule_result.get("reasons", [])
 
     # -----------------------------
-    # Trusted Domain
+    # Trusted Domain Check
     # -----------------------------
-    trusted = is_trusted(url)
+    trusted, trusted_domain = is_trusted(url)
 
     if trusted:
 
@@ -89,11 +89,14 @@ def decide(url):
 
             "trusted": True,
 
+            "trusted_domain": trusted_domain,
+
             "rule_score": rule_score,
 
             "reasons": [
-                "Trusted domain - safe override"
+                f"Trusted domain ({trusted_domain}) - safe override"
             ]
+
         }
 
     # -----------------------------
@@ -121,6 +124,9 @@ def decide(url):
         else:
             risk = "LOW"
 
+    # -----------------------------
+    # Final Response
+    # -----------------------------
     return {
 
         "url": url,
@@ -131,7 +137,9 @@ def decide(url):
 
         "risk": risk,
 
-        "trusted": trusted,
+        "trusted": False,
+
+        "trusted_domain": None,
 
         "rule_score": rule_score,
 
