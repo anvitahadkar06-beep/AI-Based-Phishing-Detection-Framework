@@ -161,7 +161,7 @@ Expected response:
 }
 ```
 
-⚠️ Make sure the virtual environment is activated before running the backend.
+> **Note:** ⚠️ Make sure the virtual environment is activated before running the backend.
 ---
 
 ## 5️⃣ Run the React Frontend
@@ -259,7 +259,7 @@ Expected Response:
     ]
 }
 ```
-The backend uses Flask-CORS to enable communication between the React frontend (`localhost:5173`) and the Flask API (`localhost:5000`).
+> **Note:** The backend uses Flask-CORS to enable communication between the React frontend (`localhost:5173`) and the Flask API (`localhost:5000`).
 ---
 
 # 💻 Testing Through the Frontend
