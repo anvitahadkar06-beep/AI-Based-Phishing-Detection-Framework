@@ -1,6 +1,6 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
-
+from feature_extraction import extract_features
 from decision_engine import decide
 from logger import log_scan
 
@@ -45,8 +45,11 @@ def predict():
         }), 400
 
     try:
+        # Extract features from the URL
+        features = extract_features(url)
+
         # AI Prediction
-        result = decide(url)
+        result = decide(url, features)
 
         # Save scan history
         log_scan(result)
@@ -58,7 +61,6 @@ def predict():
         return jsonify({
             "error": str(e)
         }), 500
-
 
 if __name__ == "__main__":
     app.run(debug=True)

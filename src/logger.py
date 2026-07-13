@@ -32,7 +32,7 @@ def log_scan(result):
             result["url"],
             result["prediction"],
             result["confidence"],
-            result["risk_level"],
+            result["risk"],
             result["trusted"],
             result["rule_score"]
         ])
