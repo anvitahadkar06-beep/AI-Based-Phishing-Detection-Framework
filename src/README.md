@@ -345,6 +345,7 @@ Final Prediction
 
 ⚠️Stopping either server will prevent the application from functioning correctly.
 
+---
 # ❗ Troubleshooting
 
 ### Flask ModuleNotFoundError
