@@ -4,11 +4,7 @@ import {
   FaLink,
   FaCheckCircle,
   FaExclamationTriangle,
-  FaShieldAlt,
-  FaBolt,
-  FaBug,
-  FaGlobe,
-  FaLock
+  FaShieldAlt
 } from "react-icons/fa";
 
 import {
