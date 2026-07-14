@@ -6,6 +6,7 @@ import Dashboard from "./pages/Dashboard";
 import ScanURL from "./pages/ScanURL";
 import History from "./pages/History";
 import Reports from "./pages/Reports";
+import Settings from "./pages/Settings";
 import Layout from "./components/Layout";
 
 function App() {
