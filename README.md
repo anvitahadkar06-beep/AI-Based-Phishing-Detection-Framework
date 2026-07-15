@@ -87,7 +87,6 @@ AI-Based-Phishing-Detection-Framework/
 ├── 📁 Frontend/
 │   ├── 📁 public/                 # Static assets served by the React application
 │   ├── 📁 src/                    # React source code and UI components
-│   ├── README.md                  # Frontend setup and usage guide
 │   ├── .gitignore                 # Git ignore rules for frontend
 │   ├── package.json               # Frontend dependencies and npm scripts
 │   └── package-lock.json          # Locked dependency versions
@@ -100,7 +99,6 @@ AI-Based-Phishing-Detection-Framework/
 │   ├── requirements.txt           # Python dependencies
 │   ├── Procfile                   # Render deployment configuration
 │   ├── .env.example               # Environment variable template
-│   └── README.md                  # Backend documentation
 │
 ├── 📁 reports/
 │   ├── 📁 evaluation/
@@ -120,7 +118,8 @@ AI-Based-Phishing-Detection-Framework/
 │
 ├── 📁 models/
 │   ├── phishing_detector.pkl
-│   └── feature_columns.pkl
+│   ├── feature_columns.pkl
+│   └── README.md
 │
 ├── 📁 src/
 │   ├── app.py
