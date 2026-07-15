@@ -34,6 +34,9 @@ function App() {
         {/* Reports */}
         <Route path="/reports" element={<Reports />} />
 
+        {/* Settings */}  
+        <Route path="/settings" element={<Settings />} />
+
         </Route>
 
       </Routes>
